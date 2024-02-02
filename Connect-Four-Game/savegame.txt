@@ -1,0 +1,8 @@
+R N N N N N N 
+R Y N N N N N 
+Y Y N N N N N 
+Y Y N N N N N 
+Y R N N N N N 
+R R N N N N R 
+R
+Hard

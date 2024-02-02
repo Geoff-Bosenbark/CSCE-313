@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="boardPane" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <top>
+      <MenuBar fx:id="menuBar" style="-fx-background-color: #FAF9F6;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem id="menuNewGame" fx:id="newGame" mnemonicParsing="false" onAction="#startNewGame" text="Start New Game" />
+                  <MenuItem id="menuChangeDifficulty" fx:id="changeDifficulty" mnemonicParsing="false" onAction="#changeDifficulty" text="Change Difficulty" />
+                  <MenuItem id="menuSaveGame" fx:id="saveGame" mnemonicParsing="false" onAction="#saveGame" text="Save Game" />
+                  <MenuItem id="menuLoadGame" fx:id="loadGame" mnemonicParsing="false" onAction="#loadGame" text="Load Game" />
+                  <MenuItem id="menuExitGame" fx:id="Exit" mnemonicParsing="false" onAction="#exitGame" text="Exit Game" />
+            </items>
+          </Menu>
+          <Menu id="menuHelp" fx:id="Help" mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem id="menuGameManual" fx:id="gameManual" mnemonicParsing="false" onAction="#showGameManual" text="Game Manual" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane fx:id="gameBoard" prefHeight="686.0" prefWidth="925.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
