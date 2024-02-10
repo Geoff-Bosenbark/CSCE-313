@@ -1,3 +1,10 @@
+/**
+ * Abstract base class for AI behavior. Defines the structure for AI implementations by providing a constructor
+ * to set game board dimensions and an abstract method 'decideMove' for determining the AI's next move.
+ * Subclasses must implement the 'decideMove' method to define specific AI logic, supporting
+ * both random and strategic AI behaviors. This class serves as a foundation for extending the game with
+ * various AI opponents, facilitating easy integration and expansion of AI strategies.
+ */
 package application;
 
 import java.util.HashMap;
