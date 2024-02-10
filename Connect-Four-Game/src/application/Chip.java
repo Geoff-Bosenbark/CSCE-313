@@ -1,3 +1,11 @@
+/**
+ * Represents a game chip in Connect Four. This class extends the Circle class
+ * from JavaFX to visually represent a chip on the game board. Chips can represent either
+ * the player or the AI opponent, distinguished by color (RED for player, BLUE for AI).
+ * Additionally, this class applies a visual effect to enhance the chip's appearance,
+ * contributing to the game's visual attractiveness.
+ */
+
 package application;
 
 import javafx.scene.effect.Light;
