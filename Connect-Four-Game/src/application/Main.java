@@ -1,3 +1,11 @@
+/**
+ * Entry point for the Connect Four application. This class extends Application and sets up the primary stage
+ * (window) for the game, including loading the main game scene from an FXML file, setting the window title, and
+ * applying a custom icon. It defines the initial size of the game window and disables window resizing to preserve
+ * the game layout. The application's CSS file is also applied to the scene for styling. The main method launches the
+ * JavaFX application.
+ */
+
 package application;
 
 import javafx.application.Application;
@@ -26,7 +34,7 @@ public class Main extends Application
 			primaryStage.show();														// Show the stage
 		} catch (Exception e)
 		{
-			e.printStackTrace();
+			e.printStackTrace(); // prints the stack trace of any exception for debug purposes
 		}
 	}
 
