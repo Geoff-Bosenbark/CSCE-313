@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- 
+FXML Layout for Connect Four Game Interface: 
+This code defines the user interface using JavaFX. It includes a BorderPane as the root layout with a MenuBar
+at the top for game controls like starting a new game, changing difficulty, saving/loading a game, 
+exiting the game, and accessing the game manual. The center of the BorderPane is reserved for the game board, 
+a Pane where the game's graphical representation will be dynamically added during runtime. 
+This layout is linked to the GameController class, which handles the interaction logic.
+-->
+
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
