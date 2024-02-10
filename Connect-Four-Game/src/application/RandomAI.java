@@ -1,17 +1,16 @@
+/**
+ * Implements a simple AI opponent that selects moves randomly. This represent's the game's 'Easy' mode.
+ * This class extends the abstract AI class, providing a concrete implementation for the decideMove method,
+ * which picks a column at random for chip placement. This AI does not attempt to block the player or strategically
+ * win the game but ensures the selected column is not already full. 
+ */
+
 package application;
 
 import java.util.HashMap;
 import java.util.Random;
 
 /**
- * @implNote Grading requirement (C)
- * 
- * Class for the 'Random' AI, extending generic AI class
- * AI initialized in 'Easy' game difficulty
- * 
- * Decides the next move for the AI randomly.
- * Randomly selects a column to place the next chip. It ensures the column selected is not already full.
- * 
  * @param boardState = The current state of the board represented as a HashMap where the key is a String 
  *        formatted as "column,row" and the value is the Chip at that position.
  * @param playerTurn = A boolean indicating whether it is the player's turn. 
