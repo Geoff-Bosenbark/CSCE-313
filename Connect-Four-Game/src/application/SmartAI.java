@@ -1,15 +1,19 @@
+/**
+ * Implements the 'Hard' mode 'Smart' AI that strategically decides moves based on the current board state.
+ * This AI attempts to win by aligning four chips vertically, horizontally, or diagonally. If a winning move is not possible,
+ * it tries to block the opponent's potential winning moves. If neither winning nor blocking is feasible, it aims to extend
+ * existing lines of its chips or, as a last resort, makes a random move. The AI's decisions are influenced by a dynamic
+ * evaluation of the board, utilizing a combination of directional checks for potential Connect Four sequences and maintaining
+ * a set of full columns to avoid invalid moves.
+ */
+
 package application;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 
-/**
- * @implNote Grading requirement (B+)
- * 
- * Class for the 'thoughtful' AI, extending generic AI class 
- * AI initialized in 'Hard' game difficulty
- *           
+/**        
  * @implNote Smart AI has the capability to recognize and prioritize making a winning move
  * @implNote Smart AI has the capability to recognize and block a player's winning move
  */
