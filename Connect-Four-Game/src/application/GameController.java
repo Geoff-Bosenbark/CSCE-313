@@ -1,3 +1,10 @@
+/**
+ * Main controller class for the game. This class integrates the game's logic, user interface interactions,
+ * and AI behavior. It handles user actions such as placing chips on the game board, switching between player and AI turns,
+ * and determining the game's outcome. Features include dynamically generated game board, AI difficulty settings,
+ * game state save/load functionality, and game reset capabilities. Utilizes JavaFX for the graphical user interface.
+ */
+
 package application;
 
 import java.io.BufferedReader;
