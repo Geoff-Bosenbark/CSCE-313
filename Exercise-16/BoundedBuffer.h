@@ -1,4 +1,3 @@
-// your PA3 BoundedBuffer.h code here
 #ifndef _BOUNDEDBUFFER_H_
 #define _BOUNDEDBUFFER_H_
 
