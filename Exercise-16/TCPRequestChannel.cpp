@@ -10,33 +10,6 @@ using namespace std;
 
 TCPRequestChannel::TCPRequestChannel(const std::string _ip_address, const std::string _port_no)
 {
-    /*
-    Suggested implementation approach:
-       - Use structures in the call to bind(...)
-       - This struct has members for specifying the port and addresses which you must bind your socket to
-       - Must convert the IP address to the network address structure that can be used within the struct to connect to the server
-
-       System calls:
-       - int inet_pton(int af, const char *restrict src, void* restrict dst);
-       - af is address famil (AF_INET is the address family for IPV4)
-       - src is the IP address of the server passed in a string (think a.b.c.d type string address in dotted decimal notation)
-       - dst is the in_addr structure (network address structure) that inet_pton converts src to. Upon successful execution of the system call, dst holds the binary representation of the IP address
-       - When creating struct, for server's call to bind, you can specify INADDR_ANY for the in_addr number. This allows the server to bind to all available addresses.
-
-    if (server)
-    {
-        create socket on specified port, specifying socket requirements: domain, type, protocol
-        bind the socket to address, sets up listening on port for any connections to the service
-        mark the socket as listening (Listen)
-    }
-
-    if (client)
-    {
-        create socket on specified port, specifying socket requirements: domain, type, protocol
-        connect to ip address of server
-    }
-    */
-
     // initialize addrinfo struct
     struct addrinfo hints, *result;
     memset(&hints, 0, sizeof hints);
