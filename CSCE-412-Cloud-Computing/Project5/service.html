@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script src="script.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoff Bosenbark - Service</title>
+    <link rel="stylesheet" href="style.css" id="styleLink">
+</head>
+
+<body class="toggle-style">
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai_page.html">AI Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Container for the toggle button -->
+        <div class="toggle-button-container">
+            <button id="toggleButton" onclick="toggleStyle()">Toggle Professional | Personal</button>
+        </div>
+
+        <!-- Professional content -->
+        <div class="content-wrapper professional">
+            <div class="text-content text-box">
+                <h1 class="centered-title">How I serve my Community</h1>
+            </div>
+            <div class="text-content text-box">
+                <h2 class="centered-title">Professional Service</h2>
+                <ul class="text-content text-box listspace">
+                    <li>My dedication in the Marine Corps and contributions through VET+MAP epitomize my commitment to
+                        national and veteran welfare</li>
+                    <ul>
+                        <li>In the Marine Corps, my roles in communications and embassy security directly safeguarded
+                            national interests and diplomatic integrity.</li>
+                        <li>With VET+MAP, I leverage this experience to mentor veterans, guiding them to align their
+                            innate talents with purposeful careers,
+                            thereby continuing my service to the community in a professional capacity.</li>
+                    </ul>
+                    <lI>I am committed to serving my community, both professionally and personally through my future
+                        endeavors. </lI>
+                    <li>Professionally, I aim to leverage my innate talents and the skills acquired at Texas A&M to
+                        support the U.S. National Security mission.</li>
+                    <li>A more secure nation not only empowers professionals to innovate and advance our society but
+                        also ensures that the citizens of the United States can fully enjoy their freedoms.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Personal content -->
+        <div class="content-wrapper personal" style="display: none;">
+            <div class="text-content text-box">
+                <h1 class="centered-title">How I serve my Community</h1>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <!-- Carousel Structure -->
+            <div id="photoCarousel" class="carousel">
+                <!-- Wrapper for the slides -->
+                <div class="carousel-slides">
+                    <!-- Individual slides -->
+                    <div class="slide">
+                        <img src="ramadan.jpeg"
+                            alt="Delivering food to families in need just prior to Ramadan in Sudan alongside the United States Agency for International Development (USAID) (2017)"
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="ramadan2.jpeg" alt="Breaking fast with the Sudanese during Ramadan (2017)"
+                            onclick="showPopup()">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control left" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="carousel-control right" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Pop-up for the photos -->
+            <div id="popup" class="popup" onclick="hidePopup()">
+                <p id="popupDescription"></p>
+            </div>
+            <div class="text-content text-box">
+                <h3 class="centered-title">Explore the carousel to see some of my previous community engagements. Simply
+                    click on any photo for a detailed description. </h3>
+                <p class="centered-title">To close the description, just click the pop-up box.
+                    Navigate through the carousel using the arrows on either side. </p>
+                <h2 class="text-content text-box centered-title"><strong>Personal service</strong></h2>
+                <ul class="text-content text-box listspace">
+                    <p>Beyond professional obligations, I engage deeply in personal acts of service.</p>
+                    <li>From my formative years as an Eagle Scout, where I engaged in local community service
+                        projects, to my international service, including community outreach programs like beach
+                        clean-ups in Okinawa and providing food assistance through <a href="https://www.usaid.gov/" target="_blank">USAID</a> during Ramadan in Sudan, I have
+                        developed a global perspective on service.</li>
+                    <li>In College Station, I actively participate in "adopt a street" clean-ups with the
+                        Student
+                        Veterans of America, underscoring my commitment to community welfare.</li>
+                    <li>These personal service activities reflect a lifelong dedication to uplifting and
+                        supporting
+                        communities across the globe.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

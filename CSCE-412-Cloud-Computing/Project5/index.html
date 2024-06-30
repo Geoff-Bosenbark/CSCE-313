@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script src="script.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoff Bosenbark - Official Site</title>
+    <link rel="stylesheet" href="style.css" id="styleLink">
+</head>
+
+<body class="toggle-style">
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai_page.html">AI Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container for the toggle button -->
+        <div class="toggle-button-container">
+            <button id="toggleButton" onclick="toggleStyle()">Toggle Professional | Personal</button>
+        </div>
+
+        <!-- Professional content container-->
+        <div class="content-wrapper professional">
+            <div class="text-content text-box">
+                <h1 class="centered-title">Geoff Bosenbark | Professional site</h1>
+            </div>
+            <div class="text-content text-box">
+                <h3 class="centered-title">My purpose is to Manifest Potential through Erudition, Cultivate Relentless Progress, and Forge Lasting Impact.</h3>
+                <h3 class="centered-title">To live in alignment with my purpose, I strive to find the intersection of where my personal values
+                    and innate talents intersect,
+                    so that I can lead a purpose-driven life, rather than simply hopping from ambition to ambition.</h3>
+                <h4 class="centered-title">Assessing my Talents, I am uniquely equipped to perform the duties of a cybersecurity intelligence
+                    analyst.
+                    This role also aligns with my personal values and would certainly enable me to be fulfilled in my
+                    life purpose.
+                    Below, I display my innate Talents and Define my Personal Values.</h4>
+                <h4><strong>Talents</strong></h4>
+                <ul class="text-content text-box listspace">
+                    <li><strong>Learner:</strong> Passion for continuous learning is vital to succeed in cybersecurity,
+                        a field that is constantly evolving with
+                        new threats and technologies. This strength empowers me to absorb the latest trends and
+                        techniques in cybersecurity.</li>
+                    <li><strong>Achiever:</strong> Hardworking nature and satisfaction in being productive are essential
+                        in a field where staying ahead of threats
+                        and responding quickly is crucial. Cybersecurity is a demanding field that requires dedication
+                        and a strong work ethic</li>
+                    <li><strong>Analytical:</strong> The ability to think critically and evaluate various factors
+                        affecting a situation is a key asset in
+                        cybersecurity. Being adept at analyzing threats, understanding complex systems, and developing
+                        strategies to mitigate risks is a powerful
+                        skill set for an analyst.</li>
+                    <li><strong>Restorative:</strong>Problem-solving is critical for identifying vulnerabilities and
+                        responding to cybersecurity incidents.
+                        Having the knack for resolving issues will be invaluable in managing and mitigating cyber
+                        threats.</li>
+                    <li><strong>Futuristic:</strong>The ability to envision the future and the ability to inspire others
+                        aligns well with the forward-thinking
+                        nature of cybersecurity. Anticipating future threats and trends is a significant part of
+                        developing robust cybersecurity strategies.</li>
+                </ul>
+                <h4><strong>Values</strong></h4>
+                <ul class="text-content text-box listspace">
+                    <li><strong>Efficiency:</strong> Discovering optimal methodologies.</li>
+                    <li><strong>Courage:</strong> Honoring commitments through adversity.</li>
+                    <li><strong>Diligence:</strong> Gritty thoroughness.</li>
+                    <li><strong>Dependability:</strong> Unquestionable effectiveness.</li>
+                    <li><strong>Responsibility:</strong> Diligent ownership.</li>
+                </ul>
+                <h4 class="centered-title">Review my Top 5 Talents report by clicking the image below to better
+                    understand what each Talent means,
+                    and how it relates to my other Talents.</h4>
+                    <h5 class="centered-title">Click the button at the bottom of each page to toggle the page's style!</h5>
+            </div>
+            <div class="photo-content">
+                <!-- Add your images here -->
+                <a href="Top5Report.pdf" target="_blank">
+                    <img src="Top5Report.JPG" alt="Professional Photo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Personal content container -->
+        <div class="content-wrapper personal" style="display: none;">
+            <div class="text-content text-box">
+                <h1 class="centered-title">Geoff Bosenbark | Personal site</h1>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <!-- Carousel Structure -->
+            <div id="photoCarousel" class="carousel">
+                <!-- Wrapper for the slides -->
+                <div class="carousel-slides">
+                    <!-- Individual slides -->
+                    <div class="slide">
+                        <img src="BearBar.jpeg"
+                            alt="Getting lunch at a bar in Bethesda, MD. The bartender insisted that Bear hang out on the bar."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Skydive.JPG" alt="My first time sky diving in Cape Town, South Africa (2016)"
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="BearPatio.jpeg" alt="Bear on our apartment balcony in Stafford, VA"
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Cheetah.JPEG" alt="Petting a sleeping cheetah at a wildlife reserve in Johannesburg, South Africa (2018). 
+                        Unfortunately, I got there right after lunch, which means nap time." onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="BearRiver.JPEG" alt="On a hike in Virginia with my wife and Bear. He loves the river."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Machu.jpeg"
+                            alt="Overlooking the historic sanctuary of Machu Picchu, an ancient Incan citadel within the Andes Mountains in Peru."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="BearPump.JPEG" alt="Bear and his sister, Pumpkin, soon after we brought Pumpkin home."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Bush.JPG"
+                            alt="Meeting President George W. Bush at the Embassy in Windhoek, Namibia. 
+                        The former President was visiting as part of his commitment to an initiative that he began in 2003 during his presidency called PEPFAR."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="RobBear.jpg"
+                            alt="My friend Rob and Bear. Bear loves to rest his arm on the passenger while we drive."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Namib.JPG"
+                            alt="The dunes of the Namib desert, which is the oldest desert in the world. 
+                        The dunes flow right into the ocean. The Namib is the only place on Earth where a small population of desert-adapted lions live."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Whitehouse.jpg"
+                            alt="My friend Rob and I at the White House. You can't tell, but Marine One (the Marine-piloted presidential helicopter) was landing on the lawn outside of the window behind us."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="BearBeer.jpg"
+                            alt="My wife and I at one of our favorite breweries in Stafford, VA. They would routinely give Bear pork shoulder as a treat."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="Sudan.JPG" alt="My team and I in Khartoum, Sudan (2018). We took this photo to commemorate one of my Marines' birthdays.
+                        That Marine is now a big TikTok influencer, which I always find amusing."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="BearTable.jpg"
+                            alt="Bear sitting at a picnic table with us, while we eat, drink, and play games, demonstrating that he's a good boy."
+                            onclick="showPopup()">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control left" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="carousel-control right" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Pop-up for the photos -->
+            <div id="popup" class="popup" onclick="hidePopup()">
+                <p id="popupDescription"></p>
+            </div>
+            <div class="text-content text-box">
+                <h3 class="centered-title">Explore the carousel to discover more about me.
+                    Simply click on any photo for a detailed description. </h3>
+                <p class="centered-title">To close the description, just click the pop-up box.
+                    Navigate through the carousel using the arrows on either side. </p>
+                <ul class="hobbies text-content text-box">
+                    <li><strong>Delve into my journey and discover what drives me. Click <a href="bio.pdf" target="_blank">here</a> for a
+                        glimpse into my story and professional ethos.</li>
+                    <li>In my leisure time, I embrace a range of activities that enrich both my personal and
+                        professional life:</li></strong>
+                    <ul class="hobbies">
+                        <li>I have a passion for exploring the intricacies of technology</li>
+                        <li>I enjoy the tranquility and adventure of hiking, appreciating the beauty of the outdoors.</li>
+                        <li>Reading diverse genres broadens my perspective, fueling both imagination and knowledge.</li>
+                        <li>Engaging in video games offers a blend of strategic thinking and relaxation.</li>
+                        <li>Spending quality time with my wife and dogs is a cornerstone of my life.</li>
+                        <li>Exploring new culinary experiences and discovering unique food spots with my wife is one of
+                            my favorite things to do.</li>
+                        <li>A major source of my happiness comes from spending time with my friends; we enjoy going on group vacations together, travelling the world</li>
+                        <li>Staying informed on international affairs, keeping abreast of global dynamics and cultural
+                            insights.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

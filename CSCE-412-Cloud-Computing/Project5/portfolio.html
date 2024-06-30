@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script src="script.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoff Bosenbark - Portfolio</title>
+    <link rel="stylesheet" href="style.css" id="styleLink">
+</head>
+
+<body class="toggle-style">
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai_page.html">AI Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Container for the toggle button -->
+        <div class="toggle-button-container">
+            <button id="toggleButton" onclick="toggleStyle()">Toggle Professional | Personal</button>
+        </div>
+
+        <!-- Professional content -->
+        <div class="content-wrapper professional">
+            <div class="text-content text-box">
+                <h1 class="centered-title">School-related Technical Portfolio</h1>
+            </div>
+            <div class="text-content text-box">
+                <h2 class="centered-title">Previous Projects</h2>
+                <h3 class="centered-title">All of my projects can be found on my <a
+                        href="https://github.com/Geoff-Bosenbark/programming-work.git" target="_blank">Github Repository</a></h3>
+                <ul class="text-content text-box listspace">
+                    <li>Round Robin Scheduler Simulation for process management.</li>
+                    <li>Several projects on inter-process communcation (IPC) and process synchronization.</li>
+                    <li><strong>Exercise 9</strong> in my github repository:</li>
+                    <ul>
+                        <li>This project implements a multithreaded data entry and processing system that reads user
+                            input from the command line,
+                            stores it in a bounded buffer for synchronization, and writes formatted data to a CSV file.
+                        </li>
+                        <li>The system is designed to handle dynamic data entry and supports basic inter-thread
+                            communication and synchronization.</li>
+                    </ul>
+                    <li>A fully functional Connect Four game (with GUI) where you play against an AI on either easy or hard mode</li>
+                    <li><h4><a href="doc/CSCE-412/doxygen/html/index.html" target="_blank">Click here to view my Cloud Computing: Project 3 - Load Balancer Documentation</a></h4></li>
+                </ul>
+                <h3 class="centered-title">Click the Connect Four board below to view a demonstration video of my Connect Four game!</h3>
+            </div>
+            <div class="photo-content">
+                <a href="https://youtu.be/J-uy46p7uug" target="_blank">
+                    <img src="ConnectFour.JPG" alt="Connect Four Game Demo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Personal content -->
+        <div class="content-wrapper personal" style="display: none;">
+            <div class="text-content text-box">
+                <h1 class="centered-title">Work-related Portfolio</h1>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <!-- Carousel Structure -->
+            <div id="photoCarousel" class="carousel">
+                <!-- Wrapper for the slides -->
+                <div class="carousel-slides">
+                    <!-- Individual slides -->
+                    <div class="slide">
+                        <img src="vsheet1.JPG"
+                            alt="The VET+MAP Values Quiz is an assessment tool for identifying top personal and professional values and talents, 
+                            evaluating their alignment, and analyzing performance in six PowerZones—PowerZone, Competency, and FrustrationZone—to 
+                            determine areas of strength and potential stress. It also aids in defining values personally, discerning purpose, and 
+                            setting SMART goals to overcome obstacles and achieve ambitions."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="vscript.JPG"
+                            alt="The script automates a Google Sheets-based Values Quiz by mapping values to groups from a 'Database' sheet 
+                            and reacting to edits in column C. When a value's checkbox is checked, the script selects the value and assigns its 
+                            group in columns I and J. If unchecked, it removes the value and its group from the selection. 
+                            This process simplifies quiz management by dynamically updating value selections and group associations without manual input."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="PBT.JPG"
+                            alt="The 'Personal Brand Template' succinctly encapsulates an individual's unique attributes and career aspirations. 
+                            It combines a defining 'I am' statement, top-5 talent definitions that highlight personal strengths and ways of working, 
+                            personal values with taglines that reflect core principles, and an impact statement outlining goals, in my case, 
+                            to influence and improve through problem-solving and forward-thinking."
+                            onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="monday.JPG"
+                            alt="I led my team to enhance our coordination and productivity by implementing Monday.com to organize our annual plan. 
+                            We break down major tasks into quarterly goals, ensuring team awareness and individual focus on priorities. 
+                            This streamlines our process to meet quarterly objectives and achieve our yearly targets."
+                            onclick="showPopup()">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control left" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="carousel-control right" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Pop-up for the photos -->
+            <div id="popup" class="popup" onclick="hidePopup()">
+                <p id="popupDescription"></p>
+            </div>
+            <div class="text-content text-box">
+                <h3 class="centered-title">Explore the carousel to see some of my work-related projects.
+                    Simply click on any photo for a detailed description. </h3>
+                <p class="centered-title">To close the description, just click the pop-up box.
+                    Navigate through the carousel using the arrows on either side. </p>
+                <ul class="hobbies text-content text-box">
+                    <li><strong> Check out the Personal Values Quiz for yourself! Click <a href="https://docs.google.com/spreadsheets/d/1uoI4ocfn8USPjpDySQ05De2Vaj8Rp8sVTyksk-3p3mc/edit?usp=sharing"
+                                target="_blank">here</a> to see my own completed quiz.</li>
+                    <li>I work as the Operations and Process Manager for a non-profit organization called the Veteran Evaluation of 
+                        Talent + Matching Assistance Program (VET+MAP). In this position, I have several responsibilities:</li></strong>
+                    <ul class="hobbies">
+                        <li>As the <strong>UX Assurance lead</strong>, my role is to optimize the Purpose-to-impact (P2i) candidates' journey, ensuring that it is user-centric and promotes growth</li>
+                        <li>In <strong>Process Management</strong>, I streamline workflows to enhance candidate experience and team efficiency. </li>
+                        <li>In <strong>Platform Development</strong>, I enhance our Salesforce Experience Cloud site, focusing on user-friendly and secure technological solutions.</li>
+                        <li>I oversee <strong>Community Development</strong>, as this is the "end-game" of our process, which involves building a strong network through engagement, fostering long-term value and shared purpose among members post-P2i.</li>
+                    </ul>
+                    <li><strong>Additionally, I am a student-worker in a Systems Administrator role at Texas A&M's Research Security Office.</strong></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

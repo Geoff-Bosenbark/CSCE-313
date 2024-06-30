@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script src="script.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoff Bosenbark - Qualifications</title>
+    <link rel="stylesheet" href="style.css" id="styleLink">
+</head>
+
+<body class="toggle-style">
+    <header>
+        <!-- <img src="header.jpg" alt="Header Image" class="header-image"> -->
+
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai_page.html">AI Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Container for the toggle button -->
+        <div class="toggle-button-container">
+            <button id="toggleButton" onclick="toggleStyle()">Toggle Professional | Personal</button>
+        </div>
+
+        <!-- Professional content -->
+        <div class="content-wrapper professional">
+            <div class="text-content text-box">
+                <h1 class="centered-title">Qualifications</h1>
+            </div>
+            <div class="text-content text-box">
+                <h2><strong>Soft Skills</strong></h2>
+                <ul class="text-content text-box listspace">
+                    <li>Leadership and adaptability honed in the Marine Corps.</li>
+                    <li>Ability to work independently with minimal supervision.</li>
+                    <li>Enjoyment and effectiveness in collaborative teamwork.</li>
+                    <li>Curiosity and analytical thinking geared towards problem-solving.</li>
+                    <li>Proven experience managing multiple tasks in high-stress environments.</li>
+                    <li>Strong communication skills, critical thinking, and responsibility-seeking.</li>
+                </ul>
+                <h2><strong>Technical Skills</strong></h2>
+                <ul class="text-content text-box listspace">
+                    <li>Solid cybersecurity foundation with hands-on operational experience.</li>
+                    <li>Proficient in analyzing network detections and managing security operations.</li>
+                    <li>Programming skills in C, C++, Java, and R.</li>
+                    <li>Knowledgeable in security vulnerabilities identification and resolution.</li>
+                    <li>Relevant cybersecurity coursework at an NSA-designated institution.</li>
+                    <li>On track for CompTIA Security+ certification.</li>
+                    <li>Experienced in installing, configuring, and maintaining communications equipment.</li>
+                </ul>
+                <h3 class="centered-title">Click the image below to view my resume!</h3>
+            </div>
+            <div class="photo-content">
+                <a href="resume.pdf" target="_blank">
+                    <img src="resume.JPG" alt="Resume">
+                </a>
+            </div>
+        </div>
+
+        <!-- Personal content -->
+        <div class="content-wrapper personal" style="display: none;">
+            <div class="text-content text-box">
+                <h1 class="centered-title">Areas of interest within Computer Science</h1>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <!-- Carousel Structure -->
+            <div id="photoCarousel" class="carousel">
+                <!-- Wrapper for the slides -->
+                <div class="carousel-slides">
+                    <!-- Individual slides -->
+                    <div class="slide">
+                        <img src="cybrclub.JPG"
+                            alt="TAMU cybr.club !" onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="dhs.JPG"
+                            alt="Department of Homeland Security's (DHS) efforts, as listed on their website" onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="ghidra.png"
+                            alt="Reverse engineering with Ghidra - lots of fun!" onclick="showPopup()">
+                    </div>
+                    <div class="slide">
+                        <img src="cyber912.JPEG"
+                            alt="Cyber 9/12 Competition in Austin, TX (2024)" onclick="showPopup()">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control left" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="carousel-control right" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+
+			<!-- Pop-up for the photos -->
+            <div id="popup" class="popup" onclick="hidePopup()">
+                <p id="popupDescription"></p>
+            </div>
+            <div class="text-content text-box">
+                <h3 class="centered-title">Explore the carousel to see some of my Computer Science related interests</h3>
+                <p class="hobbies text-content text-box">
+                    <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/cyber-statecraft-initiative/cyber-912/"
+                        target="_blank">The Cyber 9/12 Strategy Challenge</a>
+                    is one of the competitions that I have competed in, which I discovered through the 
+                    <a href="https://cybr.club/" target="_blank">TAMU Cybersecurity Club</a>. This challenge focuses on analyzing a situation
+                    related to cybersecurity policy and advising the National Security Council (NSC) on a course of action.</li>
+                </p>
+            <div class="text-content text-box">
+                <h4>My Computer Science related interests primarily revolve around cybersecurity</h4>
+                <ul>
+                    <li>How we use technology for intelligence analysis.</li>
+                    <li>How we use technology to support the <a href="https://www.whitehouse.gov/wp-content/uploads/2023/03/National-Cybersecurity-Strategy-2023.pdf" target="_blank">
+                        National Cybersecurity Strategy</a>.</li>
+                    <li>How we use technology to protect Critical Infrastructure.</li>
+                    <li>How we can continue to maintain national security while prioritizing our commitment to the U.S.
+                        Constitution.</li>
+                    <li>How cybersecurity professionals utilize the art of reverse engineering and binary exploitation.</li>
+                </ul>
+                <h4><strong>Why I am interested in these areas</strong></h4>
+                <ul>
+                    <li>My interest in cybersecurity stems from firsthand experience in high-stakes security
+                        environments,
+                        where the integrity of communication networks and diplomatic missions was paramount.</li>
+                    <li>This has fueled a passion for defending digital frontiers against security threats,
+                        emphasizing the critical role of cybersecurity in national defense.</li>
+                    <li>Through my academic pursuits at Texas A&M, I aim to further my expertise in computing and
+                        cybersecurity,
+                        driven by a recognition of cybersecurity's pivotal role in maintaining societal stability in
+                        the digital age.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
